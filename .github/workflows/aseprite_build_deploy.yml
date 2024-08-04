@@ -67,7 +67,7 @@ jobs:
        fail-fast: false    
     steps:
       - name: (Windows) Install dependencies
-        if: matrix.os == 'windows-latest'
+        if: matrix.os == 'linux-latest'
         uses: seanmiddleditch/gha-setup-ninja@v1
       - name: (Ubuntu) Install dependencies
         if: matrix.os == 'ubuntu-latest'
